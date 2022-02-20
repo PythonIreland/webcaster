@@ -1,7 +1,7 @@
 diagram {
     Webcaster -> Client [label = "show /info1"];
     Webcaster <-- Client [label = "200 will do"];
-    Client -> Chrome [label = "driver.get('/info1')"];
+    Client -> Chrome [label = "driver.get('webcaster/info1')"];
     Webcaster <- Chrome [label = "GET /info1"];
     Webcaster -> Chrome [label = "info1.html"];
 }
